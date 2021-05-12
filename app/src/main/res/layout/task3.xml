@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/holo_orange_light"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="right">
+
+        <TextView
+            android:id="@+id/operandTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            tools:text="1"/>
+
+        <TextView
+            android:id="@+id/operationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            tools:text="+" />
+
+        <TextView
+            android:id="@+id/operatorTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            tools:text="5"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/fieldEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:editable="false"
+        android:inputType="number"
+        android:focusable="false"
+        android:digits="0123456789."
+        android:background="@android:color/white"
+        android:gravity="right"
+        android:padding="5dp"
+        android:text="0"/>
+
+    <include layout="@layout/task2" />
+
+</LinearLayout>
