@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private EditText etResult;
 
 
-    //прописываем константы
+    //прописываем констант
     private static final String ADDITION = "+";
     private static final String SUBTRACTION = "-";
     private static final String MULTIPLICATION = "*";
