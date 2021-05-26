@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //btnPlus.setOnClickListener(this);
 
         //но лучше так: + - * /
+        //те при нажатии на эти кнопки выполняется метод onClick
         findViewById(R.id.btnPlus).setOnClickListener(this);
         findViewById(R.id.btnMinus).setOnClickListener(this);
         findViewById(R.id.btnMulti).setOnClickListener(this);
@@ -80,6 +81,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         } else {
             etResult.append(numberStr); // "102"
         }
+
     }
 
     public void onEqualsClick(View view) {
